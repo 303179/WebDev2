@@ -39,14 +39,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="jquery-1.7.1.js"></script>
-    <script>
-        jQuery('ul li h1').addClass('emphasis');
-        $('ul li').addClass('emphasis');
-
-    </script>
-    <script src="https://ajax.googleliapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -91,10 +83,9 @@
 
     </style>
 </head>
-   <font color="pink"></font>
-<body style="background-image: url(https://images.unsplash.com/photo-1572460852746-7689fd6e6c52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80)">
-    <div class="menu">
 
+<body style="background-color: #bff4ee">
+    <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">Costa Rica</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -104,12 +95,12 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
                     <a href="History.html" class="nav-item nav-link">History</a>
-                    <a href="food.html" class="nav-item nav-link " tabindex="-1">Food</a>
+                    <a href="food.html" class="nav-item nav-link" tabindex="-1">Food</a>
                     <a href="Things.html" class="nav-item nav-link " tabindex="-2">Things To Do</a>
-                    <a href="contact.html" class="nav-item nav-link" tabindex="-2">Contact</a>
-                    <a href="reasons.html" class="nav-item nav-link" tabindex="-2">Reasons To Go</a>
+                    <a href="contact.html" class="nav-item nav-link active" tabindex="-2">Contact</a>
+                     <a href="reasons.html" class="nav-item nav-link" tabindex="-2">Reasons To Go</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -119,38 +110,121 @@
         </nav>
     </div>
 
-    <div class="wideMargin" id="content">
+    <div class="wideMargin" id="content" style="text-align: center">
 
-    
-        <h2> All about Costa Rica</h2>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body 
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+  display: none;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h1>Contact Information</h1>
+
+<div class="tab">
+  <button class="tablinks" onmouseover="openCity(event, 'Email')">Email</button>
+  <button class="tablinks" onmouseover="openCity(event, 'Number')">Phone Number</button>
+  <button class="tablinks" onmouseover="openCity(event, 'AbMe')">About Me</button>
+</div>
+
+<div id="Email" class="tabcontent">
+  <h3><head>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "303179@shakopeeschools.org";
+}
+</script>
+</head>
+
+<body>
 
 
-    </div>
+<button onclick="myFunction()">Email</button>
 
-    <div>
-     
-
-
-        <a href='food.html'><button class="buttonimg">Click Here To Find Places to Eat</button></a>
-    </div>
-
-    <div>
-       
-
-        <a href='Things.html'><button class="buttonimg">Click Here To Find Things To Do</button></a>
-    </div>
-    <div>
-      <div>
-  <a href='contact.html'><button class="buttonimg">Click Here To See Contact Info</button></a>
-    </div>
-        <div>
-  <a href='History.html'><button class="buttonimg">Click Here To Learn About The History</button></a>
-    </div>
-
-        <a href='reasons.html'><button class="buttonimg">Click Here To See Reasons You Should Go</button></a>
-    </div>
-
+<p id="demo"></p>
 
 </body>
+</h3>
+  <p>This is my school email and you can use it to contact me at any time throughout the day!</p>
+</div>
 
-</html>
+<div id="Number" class="tabcontent">
+  <h3>(952) 290-3273</h3>
+  <p>This is my phone number, and you can call/text me throughout the day and I will try my best to answer.</p> 
+</div>
+
+<div id="AbMe" class="tabcontent">
+  <h3>About Me</h3>
+  <p>I'm a student at Shakopee High School and I have no idea what else to write about me. :)</p>
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+    </script>
+   

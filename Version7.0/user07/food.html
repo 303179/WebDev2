@@ -100,7 +100,8 @@
                     <a href="History.html" class="nav-item nav-link">History</a>
                     <a href="food.html" class="nav-item nav-link active" tabindex="-1">Food</a>
                     <a href="Things.html" class="nav-item nav-link " tabindex="-2">Things To Do</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-2">Contact</a>
+                    <a href="contact.html" class="nav-item nav-link " tabindex="-2">Contact</a>
+                     <a href="reasons.html" class="nav-item nav-link" tabindex="-2">Reasons To Go</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -110,59 +111,38 @@
         </nav>
     </div>
 
-    <div class="wideMargin" id="content">
 
-        <h4><font color=#dbdfe5> Foods To Eat</font></h4>
 
-    </div>
+
 
     <div>
         <br>
         <br>
         <br>
-        <p> 
-            
-            Some of the most popular foods to eat in Costa Rica </p>
+        <p>
+
+            <h1>Some of the Most Popular Foods in Costa Rica</h1>
         <br>
         <br>
     </div>
+
 
     <div>
         <br>
         <br>
 
         <dl>
-            <dt>Gallo Pinto</dt>
-            <dd>
-                <ol>
 
-                    <li>Can be found and eaten from booths on the street</li>
-                    <li>Most popular and enjoyed by many local people</li>
-                    <li>Made of Rice & Beans</li>
-                </ol>
-
-
-
-
-            </dd>
-            <dt>Arroz con Leche</dt>
-            <dd>
-                <ol>
-                    <li>Rice with Cinnamon and Cream/Milk</li>
-                    <li>My dad makes this every year for Christmas and it's delicious!</li>
-                    <li>Very common as a dessert or snack in Costa Rica</li>
-                </ol>
-            </dd>
-            <dt>Casado</dt>
-            <dd>
-                <ol>
-
-                    <li>This dish can be found in many restraunts all around Costa Rica</li>
-                    <li>Made with rice, meat, and beans primarily</li>
-                </ol>
-            </dd>
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+
+
+
+
+
 
 
             <script>
@@ -185,20 +165,145 @@
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
             </div>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                .accordion {
+                    background-color: #eee;
+                    color: #444;
+                    cursor: pointer;
+                    padding: 18px;
+                    width: 100%;
+                    border: none;
+                    text-align: left;
+                    outline: none;
+                    font-size: 15px;
+                    transition: 0.4s;
+                }
 
-            <div>
-                <br>
-                <br>
-                <br>
+                .active,
+                .accordion:hover {
+                    background-color: #ccc;
+                }
 
-                <h6 class="center2">Sources</h6>
+                .panel {
+                    padding: 0 18px;
+                    display: none;
+                    background-color: white;
+                    overflow: hidden;
+                }
 
-                <a href="https://www.govisitcostarica.com/blog/post/most-popular-foods-costa-rica.aspx">
-                    <h6>https://www.govisitcostarica.com/blog/post/most-popular-foods-costa-rica.aspx</h6>
-                </a>
+            </style>
+
+            <body>
 
 
+                <div>
+                    <button class="accordion">Gallo Pinto</button>
+                    <div class="panel">
+                        <p>
+                            <ol>
+
+                                <li>Can be found and eaten from booths on the street</li>
+                                <li>Most popular and enjoyed by many local people</li>
+                                <li>Made of Rice & Beans</li>
+                            </ol>
+
+                    </div>
+                    <div>
+                        <button class="accordion">Arroz con Leche</button>
+                        <div class="panel">
+                            <p>
+                                <ol>
+                                    <li>Rice with Cinnamon and Cream/Milk</li>
+                                    <li>My dad makes this every year for Christmas and it's really good.</li>
+                                    <li>Very common as a dessert or snack in Costa Rica</li>
+                                </ol>
+
+                        </div>
+                        <div>
+                            <button class="accordion">Casado</button>
+                            <div class="panel">
+                                <p>
+                                    <ol>
+
+                                        <li>This dish can be found in many restraunts all around Costa Rica</li>
+                                        <li>Made with rice, meat, and beans primarily</li>
+                                    </ol>
+                            </div>
+
+                            <script>
+                                var acc = document.getElementsByClassName("accordion");
+                                var i;
+
+                                for (i = 0; i < acc.length; i++) {
+                                    acc[i].addEventListener("click", function() {
+                                        this.classList.toggle("active");
+                                        var panel = this.nextElementSibling;
+                                        if (panel.style.display === "block") {
+                                            panel.style.display = "none";
+                                        } else {
+                                            panel.style.display = "block";
+                                        }
+                                    });
+                                }
+
+                            </script>
+                            <div>
+                                <br>
+                                <br>
+                                <br>
+
+                                <h6 class="center2">Sources</h6>
+
+                                <a href="https://www.govisitcostarica.com/blog/post/most-popular-foods-costa-rica.aspx">
+                                    <h6>https://www.govisitcostarica.com/blog/post/most-popular-foods-costa-rica.aspx</h6>
+
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<body>
+
+<div class="container">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS9kQPxOt7GDWEQyRv7VhnsGQ_6RmcM90pnVjp2fxLxnsirw7o%3Ahttps%3A%2F%2Fwww.travelexcellence.com%2Fimages%2Fcasado-costa-rica-traditional-dish.jpg&usqp=CAU" alt="Casado" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2007/9/10/0/IY0109_Arroz.jpg.rend.hgtvcom.616.462.suffix/1384468462239.jpeg" alt="Arroz Con Leche" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="https://www.pcrm.org/sites/default/files/gallo-pinto-10.jpg" alt="Gallo Pinto" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
 
 </body>
 
-</html>
+

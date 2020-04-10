@@ -39,14 +39,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="jquery-1.7.1.js"></script>
-    <script>
-        jQuery('ul li h1').addClass('emphasis');
-        $('ul li').addClass('emphasis');
-
-    </script>
-    <script src="https://ajax.googleliapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -91,10 +83,9 @@
 
     </style>
 </head>
-   <font color="pink"></font>
-<body style="background-image: url(https://images.unsplash.com/photo-1572460852746-7689fd6e6c52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80)">
-    <div class="menu">
 
+<body style="background-color: #e6dbff">
+    <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">Costa Rica</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -104,12 +95,12 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
                     <a href="History.html" class="nav-item nav-link">History</a>
                     <a href="food.html" class="nav-item nav-link " tabindex="-1">Food</a>
                     <a href="Things.html" class="nav-item nav-link " tabindex="-2">Things To Do</a>
-                    <a href="contact.html" class="nav-item nav-link" tabindex="-2">Contact</a>
-                    <a href="reasons.html" class="nav-item nav-link" tabindex="-2">Reasons To Go</a>
+                    <a href="contact.html" class="nav-item nav-link " tabindex="-2">Contact</a>
+                    <a href="reasons.html" class="nav-item nav-link active" tabindex="-2">Reasons To Go</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -119,38 +110,63 @@
         </nav>
     </div>
 
-    <div class="wideMargin" id="content">
+    <div class="wideMargin" id="content" style="text-align: center">
 
-    
-        <h2> All about Costa Rica</h2>
-
+        <h1 style="text-align: center">Reasons To Visit Costa Rica</h1>
 
     </div>
 
     <div>
-     
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "There's beautiful forests and beaches all around";
+            }
 
+        </script>
 
-        <a href='food.html'><button class="buttonimg">Click Here To Find Places to Eat</button></a>
-    </div>
+        <button onclick="myFunction()">Reason 1</button>
 
-    <div>
-       
+        <p id="demo"></p>
 
-        <a href='Things.html'><button class="buttonimg">Click Here To Find Things To Do</button></a>
-    </div>
-    <div>
-      <div>
-  <a href='contact.html'><button class="buttonimg">Click Here To See Contact Info</button></a>
-    </div>
-        <div>
-  <a href='History.html'><button class="buttonimg">Click Here To Learn About The History</button></a>
-    </div>
-
-        <a href='reasons.html'><button class="buttonimg">Click Here To See Reasons You Should Go</button></a>
     </div>
 
 
-</body>
 
-</html>
+
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#flip").click(function() {
+                    $("#panel").slideDown("slow");
+                });
+            });
+
+        </script>
+        <style>
+            #panel,
+            #flip {
+                padding: 5px;
+                text-align: center;
+                background-color: #bff4ee;
+                border: solid 1px #c3c3c3;
+            }
+
+            #panel {
+                padding: 50px;
+                display: none;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div id="flip">More reasons!</div>
+        <div id="panel">
+          There are many amazing animals such as sloths and tropical birds,
+         and there are many different foods you can eat, (you can view some on the Food tab)
+             and there are a lot of different beautiful hotels and travel spots.
+        </div>
+    </body>
